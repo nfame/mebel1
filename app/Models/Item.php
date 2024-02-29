@@ -23,7 +23,7 @@ class Item extends Model implements HasMedia
         'size',
         'color',
         'material',
-        // 'images',
+        //'images',
         'catalogs_id'
     ];
 

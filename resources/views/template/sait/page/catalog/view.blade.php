@@ -1,6 +1,8 @@
 @extends('template.skelet')
 @section('content')
 
+{{-- --}}
+
 <div class="container">
     <div class="row">
         <table class="table table-responsive">
@@ -12,16 +14,15 @@
             </thead>
             <tbody>
                 <tr>
-                    @if($item->getFirstMediaUrl('images') = 0)
+                    @if($item->getFirstMediaUrl('images') != 0)
                 <td>
                     <img src="https://placebear.com/200/300" alt="{{$item->title}}">
                 </td>
-                @else
+                    @else
                     <td>
-                        {{-- <img src="{{ $item->getFirstMediaUrl->('iamges')->getUrl('thumb') }}"> --}}
-                        <img src="{{$item->getFirstMedia('images')->getUrl('thumb')}}" alt="">
+                        <img src="{{$item->getFirstMedia('images')->getUrl('thumb')}}" alt="{{$item->title}}">
                     </td>
-                @endif
+                   @endif
                     <td>
                         <h3>{{$item->title}}</h3>
                         <small><b>Артикул :</b>{{$item->article}}</small>

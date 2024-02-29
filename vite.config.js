@@ -12,3 +12,10 @@ export default defineConfig({
         }),
     ],
 });
+
+
+// u tebya ne ustanovlen chocolate plugin - eto raz
+// vtoroe - node bul starui
+// tretie composer kak to ustanovilsya - no npm starui
+
+// Tu hot' obnovlyai inogda komp
